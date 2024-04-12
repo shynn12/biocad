@@ -1,0 +1,21 @@
+---
+
+is_debug: true
+listen:
+  type: port
+  bind_ip: 0.0.0.0
+  port: 10000
+mongodb:
+  host: localhost
+  port: 27017
+  database: tsv-data
+  auth_db:
+  username:
+  password:
+  collection: data
+tsvpath: tsvs
+pdfpath: pdf
+headers: ["n", "mqtt", "invid", "unit_guid","msg_id", "text", "context", 
+          "class", "level", "area", "addr", "block", "type", "bit", 
+          "invert_bit"]
+per_page: 9
